@@ -50,11 +50,25 @@
       color: #ccc;
     }
 
-    form {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
+    <form>
+  <div class="form-group">
+    <label for="correo">Dirección de correo electrónico *</label>
+    <input type="email" id="correo" placeholder="correo@ejemplo.com" required />
+  </div>
+
+  <div class="form-group">
+    <label for="usuario">Nombre de usuario *</label>
+    <input type="text" id="usuario" placeholder="Tu nombre de usuario" required />
+  </div>
+
+  <div class="form-group">
+    <label for="clave">Contraseña *</label>
+    <input type="password" id="clave" placeholder="Contraseña segura" required />
+    <p class="note">Tener al menos 10 caracteres con no más de 4 caracteres repetidos seguidos.</p>
+  </div>
+
+  <button type="submit">Crear cuenta</button>
+</form>
     }
 
     label {
